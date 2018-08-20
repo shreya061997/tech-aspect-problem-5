@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+<display-name>TestNew</display-name>
+<welcome-file-list>
+<welcome-file>homepage/home.jsp</welcome-file>
+</welcome-file-list>
+<servlet>
+<servlet-name>ShreyaServlet</servlet-name>
+<servlet-class>accountpackage.AccountServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ShreyaServlet</servlet-name>
+<url-pattern>/AccountServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>projectServlet</servlet-name>
+<servlet-class>ExamplePackage.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>projectServlet</servlet-name>
+<url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>modifyServlet</servlet-name>
+<servlet-class>ExamplePackage.UpdateServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>modifyServlet</servlet-name>
+<url-pattern>/UpdateServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>insertServlet</servlet-name>
+<servlet-class>ExamplePackage.InsertServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>insertServlet</servlet-name>
+<url-pattern>/InsertServlet</url-pattern>
+</servlet-mapping>
+</web-app>
